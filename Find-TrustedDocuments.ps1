@@ -1,11 +1,11 @@
-function Enumerate-TrustedDocuments
+function Find-TrustedDocuments
 {
 <#
 .SYNOPSIS
 
 This script is used to get useful information from a computer.
 
-Function: Enumerate-TrustedDocuments
+Function: Find-TrustedDocuments
 Author: Jeff McCutchan, Twitter: @jamcut
 Required Dependencies: None
 Optional Dependencies: None
@@ -17,7 +17,7 @@ This script is used to enumerate trusted documents and trusted locations for Mic
 
 .EXAMPLE
 
-Enumerate-TrustedDocuments
+Find-TrustedDocuments
 Enumerates trusted documentd and trusted locations from the registry.
 
 .NOTES
@@ -25,7 +25,7 @@ This script is useful for identifying which documents have been trusted by the u
 When uploaded to the original locations (thus overwriting the original document) the modified macro will continue to execute without prompting the user.
 
 .LINK
-https://github.com/jamcut/one-offs/blob/master/Enumerate-TrustedDocuments.ps1
+https://github.com/jamcut/one-offs/blob/master/Find-TrustedDocuments.ps1
 
 #>
     $BASE_EXCEL_REG_LOCATIONS = "HKCU:\Software\Microsoft\Office\11.0\Excel\Security", "HKCU:\Software\Microsoft\Office\12.0\Excel\Security", "HKCU:\Software\Microsoft\Office\14.0\Excel\Security", "HKCU:\Software\Microsoft\Office\15.0\Excel\Security" 
